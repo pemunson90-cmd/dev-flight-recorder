@@ -61,3 +61,7 @@ powershell -File dfr.ps1 uninstall   # removes the task and phone link; MOVES pr
 - A powered-off, asleep or offline PC cannot serve the dashboard.
 - Grok and Copilot histories are detected but not read.
 - Short-lived processes between 30-second samples can be missed.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
