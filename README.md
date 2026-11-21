@@ -8,7 +8,7 @@ It never writes to your projects, never runs `git fetch/pull/reset/checkout/clea
 
 - **Git:** status, branch and HEAD changes, commits, linked worktrees (read-only Git commands with optional locks off).
 - **Files:** created / edited / deleted / renamed files in the folders you list, with native change notices plus a periodic full re-check.
-- **Edit history:** for allowed text files, compressed and AES-256-GCM encrypted copies (key protected by Windows DPAPI). Limits: 1 MiB per file, 2 GiB total, 60 days. Old copies are moved to a `_scrap-YYYYMMDD` folder, never deleted.
+- **Edit history:** for allowed text files, compressed and AES-256-GCM encrypted copies (key protected by Windows DPAPI). Limits: 1 MiB per file, 20 GiB total, 60 days. Old copies are moved to a `_scrap-YYYYMMDD` folder, never deleted.
 - **Secrets:** `.env`, keys, credential files and similar are recorded as "changed" only; their contents are never read. Secret-looking text is redacted from diffs.
 - **Agents:** what Claude Code and Codex sessions *reported* (tool calls, edited files, token counts), read from their existing history files. Timing overlap with real file changes is shown as "possibly associated", never as proof of who changed what.
 - **Honest gaps:** any time the recorder was not running, or the watcher lost events, is shown as a gap, not as "no activity".
