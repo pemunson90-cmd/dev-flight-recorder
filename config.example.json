@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "timezone": "America/New_York",
+  "mode": "observe_only",
+  "user_profile": "C:/Users/YOUR_USER",
+  "data_dir": "C:/Users/YOUR_USER/AppData/Local/DevFlightRecorder",
+  "summary_minutes": 60,
+  "git_scan_seconds": 90,
+  "process_scan_seconds": 30,
+  "session_scan_seconds": 60,
+  "fs_reconciliation_minutes": 30,
+  "session_history_days": 60,
+  "local_admin": {
+    "host": "127.0.0.1",
+    "port": 8775
+  },
+  "remote_report": {
+    "host": "127.0.0.1",
+    "port": 8766,
+    "allowed_hosts": [
+      "YOUR-PC.YOUR-TAILNET.ts.net"
+    ]
+  },
+  "snapshots": {
+    "eligible_extensions": [
+      ".c",
+      ".cc",
+      ".cpp",
+      ".cs",
+      ".css",
+      ".go",
+      ".h",
+      ".html",
+      ".java",
+      ".js",
+      ".json",
+      ".jsx",
+      ".md",
+      ".mjs",
+      ".cjs",
+      ".py",
+      ".rs",
+      ".sql",
+      ".toml",
+      ".ts",
+      ".tsx",
+      ".txt",
+      ".yaml",
+      ".yml",
+      ".ps1",
+      ".sh",
+      ".gd",
+      ".tscn"
+    ],
+    "max_file_bytes": 1048576,
+    "max_delta_bytes": 262144,
+    "max_store_bytes": 2147483648,
+    "retention_days": 60
+  },
+  "watch_roots": [
+    {
+      "path": "C:/Users/YOUR_USER/Documents/my-repo",
+      "kind": "repository",
+      "snapshots": true
+    },
+    {
+      "path": "C:/Users/YOUR_USER/Documents/projects",
+      "kind": "discovery",
+      "scan_depth": 3,
+      "snapshots": true
+    }
+  ],
+  "exclude_dir_names": [
+    ".git",
+    "node_modules",
+    ".venv",
+    "venv",
+    "dist",
+    "target",
+    ".next",
+    "coverage",
+    "__pycache__",
+    ".cache",
+    ".gradle",
+    ".godot",
+    ".import"
+  ],
+  "exclude_dir_prefixes": [
+    "_scrap",
+    "_archive",
+    "_to_delete"
+  ],
+  "sensitive_name_patterns": [
+    "^\\.env$",
+    "^\\.env\\.",
+    "^id_rsa",
+    "^id_ed25519",
+    "^id_ecdsa",
+    "\\.pem$",
+    "\\.p12$",
+    "\\.pfx$",
+    "\\.key$",
+    "\\.keystore$",
+    "^credentials",
+    "credentials\\.json$",
+    "secrets?\\.(json|ya?ml|toml|txt)$",
+    "^\\.npmrc$",
+    "^\\.pypirc$",
+    "^\\.netrc$",
+    "\\.sqlite$",
+    "\\.db$",
+    "auth\\.json$",
+    "\\.token$",
+    "^token\\.(json|txt)$"
+  ],
+  "sensitive_dir_names": [
+    ".ssh",
+    ".aws",
+    ".gnupg",
+    ".azure",
+    ".kube",
+    ".claude",
+    ".codex"
+  ]
+}

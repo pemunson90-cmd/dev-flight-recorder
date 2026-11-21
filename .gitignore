@@ -1,0 +1,7 @@
+# Personal settings and machine output stay local.
+config.json
+install.log
+*.bak.*
+node_modules/
+# Reference clone of another project, not part of this one.
+upstream/
